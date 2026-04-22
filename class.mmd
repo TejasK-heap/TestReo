@@ -1,7 +1,6 @@
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
-    Animal <|-- Zebra
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
@@ -14,8 +13,4 @@ classDiagram
     class Fish{
       -int sizeInFeet
       -canEat()
-    }
-    class Zebra{
-      +bool is_wild
-      +run()
     }
