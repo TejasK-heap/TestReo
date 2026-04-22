@@ -1,6 +1,10 @@
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
+    Animal <|-- Cat
+    Animal <|-- Bird
+    Animal <|-- Snake
+    Animal <|-- Elephant
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
@@ -13,4 +17,32 @@ classDiagram
     class Fish{
       -int sizeInFeet
       -canEat()
+    }
+    class Cat{
+      +String furColor
+      +Boolean isIndoor
+      +meow()
+      +hunt()
+      +purr()
+    }
+    class Bird{
+      +int wingspan
+      +String featherColor
+      +fly()
+      +sing()
+      +buildNest()
+    }
+    class Snake{
+      +int lengthInFeet
+      +Boolean isVenomous
+      +slither()
+      +shed()
+      +hunt()
+    }
+    class Elephant{
+      +int trunkLength
+      +int weight
+      +trumpet()
+      +spray()
+      +remember()
     }
