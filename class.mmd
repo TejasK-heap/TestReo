@@ -1,6 +1,9 @@
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
+    Animal <|-- Dog
+    Animal <|-- Cat
+    Animal <|-- Snake
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
@@ -13,4 +16,25 @@ classDiagram
     class Fish{
       -int sizeInFeet
       -canEat()
+    }
+    class Dog{
+      +String breed
+      +String furColor
+      +bark()
+      +fetch()
+      +wagTail()
+    }
+    class Cat{
+      +String eyeColor
+      +boolean isIndoor
+      +meow()
+      +purr()
+      +scratch()
+    }
+    class Snake{
+      +float length
+      +boolean isVenomous
+      +hiss()
+      +shed()
+      +slither()
     }
