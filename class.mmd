@@ -1,6 +1,5 @@
 classDiagram
     Animal <|-- Duck
-    Animal <|-- Fish
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
@@ -9,8 +8,4 @@ classDiagram
       +String beakColor
       +swim()
       +quack()
-    }
-    class Fish{
-      -int sizeInFeet
-      -canEat()
     }
